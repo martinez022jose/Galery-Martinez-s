@@ -26,11 +26,10 @@ a{
 header .cajaLogo {
 
 	text-align: center;
-	padding: 60px;
 	background:black;
 	position: fixed;
 	width: 100%;
-	height: 40px;
+	padding:30px;
 	z-index: 2;
 	}
 
