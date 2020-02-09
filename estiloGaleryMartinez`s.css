@@ -1,0 +1,227 @@
+/*Modificaciones en general*/
+*{
+	margin:0px;
+	padding: 0px;
+
+}
+body{
+	background:#ededed;
+}
+
+.contenedor{
+	width: 100%;
+	max-width: 800px;
+	margin:auto; 
+}
+
+a{
+	text-decoration: none;
+}
+/* Trabajando sobre el header*/
+
+header .cajaLogo {
+	text-align: center;
+	padding: 60px;
+
+
+}
+
+header .cajaLogo h1{
+	font-size: 40px;
+	text-shadow: 0px 0px 50px black;
+	color:white;
+
+	
+   
+
+}
+header .cajaLogo p {
+	font-size: 20px;
+	text-shadow: 0px 0px 50px black;
+	color:white;
+
+}
+
+header .cajaBusqueda{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+
+}
+
+header .cajaBusqueda .barraDeBusqueda{
+	background: #ededed;
+	color:black;
+	border:5px solid black;
+	text-align: center;
+	font-size: 25px;
+	border-radius: 20px;
+	width:70%;
+	height:40px;
+	box-shadow: 0px 0px 50px grey;
+}
+
+header .cajaCategorias{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+}
+
+header .cajaCategorias a{
+	background-color: grey;
+	color: white;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 20px;
+	border: 5px double black;
+	font-size:20px;
+
+}
+
+header .cajaCategorias a:hover{
+	background: #DEB887;
+}
+
+header .cajaCategorias .categoriaActivada{
+    color:black;
+	
+}
+
+/* Trabajamos sobre script Grid, uso de libreria externa https://haltu.github.io/muuri/,
+para obtener algoritmo de ordenamiento de fotos*/
+
+/* estilos predeterminado por Grid*/
+.grid{
+	position: relative;
+	width:100%;
+	opacity: 0;
+}
+
+.grid .item{
+	position: absolute;
+	display:block;
+	margin: 5px;
+	width: calc(25% - 10px);
+}
+
+.grid .item .item-content{
+	position: relative;
+}
+
+/* Modificaciones propias sobre Grid*/
+
+
+.grid .item .item-content img{
+	width: 100%; /* Ojo quiero ue este al 100% respecto del 25%-10px del item*/
+}
+
+.activoImagenes{ 
+	opacity: 1;/*Realizamos esta clase para que muestre las fotos todas de una*/
+	transition: opacity 3s;
+}
+
+/* Trabajamos sobre mostrar unicamente fotos seleccionada*/
+
+.cajaPantallaUnica{
+    position: fixed;
+	right: 0;
+	left:0;
+	top:0;
+	bottom:0;
+	background:black;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height:100%;
+	
+}
+.activoPantallaUnica{
+	display: flex;
+}
+
+.cajaPantallaUnica .cajaDescripcion{
+	background:white;
+	color:black;
+	width: auto;
+	height: auto;
+	font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+ }
+
+ .cajaPantallaUnica .contenedorImg{
+ 	position: relative;
+ }
+
+ .cajaPantallaUnica #botonCerrar{
+ 	position: absolute;
+ 	right: -15px;
+ 	top:-15px;
+ 	cursor:pointer;
+ }
+
+ /*Trabajando sobre el Fooder*/
+
+ footer .contenedorRedes{
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	flex-wrap: wrap;
+ }
+
+ footer .contenedorRedes a{
+ 	display:block;
+ 	color:white;
+ 	padding: 30px;
+ 	background: black;
+ 	margin:20px;
+ 	border-radius: 40px;
+
+
+ }
+
+ footer .contenedorRedes .cajaTwitter .twiter:hover{
+ 	background:#00acee;
+ 	color:white;
+ }
+
+ footer .contenedorRedes .cajaFacebook .facebook:hover{
+ 	background:#3b5998;
+ 	color:white;
+ }
+
+ footer .contenedorRede .cajaGit .git:hover{
+ 	background:#171515;
+
+ }
+
+ footer .contenedorRedes a:hover{
+ 	background:white;
+ 	color:black;
+ 	transition: 1s;
+ }
+
+ footer .contenedorDerechos{
+ 	text-align: center;
+ 	font-size: 20px;
+ 	margin:20px;
+
+ }
+ footer .contenedorDerechos{
+ 	color:grey;
+ }
+
+ footer .contenedorDerechos a{
+ 	color:black;
+ }
+
+ footer .contenedorDerechos p a:hover{
+ 	text-decoration: underline;
+ }
+
+
+
